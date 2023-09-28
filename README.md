@@ -1,74 +1,54 @@
-## Cadastro de Usuários
+# Cadastro de Usuários com SQLAlchemy 📚👥
 
-### Descrição do Programa
+Este projeto é um sistema de cadastro de usuários desenvolvido em Python. Ele utiliza o SQLAlchemy, uma biblioteca SQL Toolkit e Object-Relational Mapping (ORM) para Python, para interagir com o banco de dados SQLite.
 
-O programa "Cadastro de Usuários" é uma aplicação de linha de comando desenvolvida em Python que permite cadastrar, listar e excluir usuários em um banco de dados SQLite. Ele foi projetado para ser uma ferramenta simples e eficaz para gerenciar informações de usuários, incluindo nome e CPF.
+## Como usar 🚀
 
-### Funcionalidades
+1. Clone o repositório para sua máquina local usando `git clone`.
+2. Navegue até a pasta do projeto.
+3. Instale as dependências necessárias com o comando `pip install -r requirements.txt`.
+4. Execute o script principal com o comando `python main.py`.
 
-O programa oferece as seguintes funcionalidades:
+## Funcionalidades 🛠️
 
-1. **Cadastrar Usuário:** Permite inserir novos usuários no banco de dados, incluindo validação de CPF.
-2. **Listar Usuários:** Exibe a lista de todos os usuários cadastrados no banco de dados.
-3. **Excluir Usuário:** Permite excluir um usuário com base no CPF fornecido.
+### Cadastrar usuário 👤
 
-### Pré-requisitos
+Esta opção permite cadastrar um novo usuário no sistema. Será solicitado que você insira o nome, CPF e e-mail do usuário. O CPF e o e-mail são únicos para cada usuário, ou seja, não podem haver dois usuários com o mesmo CPF ou e-mail.
 
-Antes de executar o programa, certifique-se de ter instalado as seguintes dependências:
+### Listar usuários 📋
 
-- Python 3.x
-- SQLAlchemy (biblioteca para manipulação do banco de dados)
-- SQLite (banco de dados integrado ao programa)
+Esta opção lista todos os usuários cadastrados no sistema. Serão exibidos o ID, nome, CPF e e-mail de cada usuário.
 
-### Como Executar o Programa
+### Excluir usuário ❌
 
-1. Clone o repositório do programa para o seu computador:
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   ```
-   
-2. Crie um ambiente virtual (opcional, mas recomendado):
-   ```bash
-   python -m venv venv
-   ```
+Esta opção permite excluir um usuário do sistema. Será solicitado que você insira o CPF do usuário que deseja excluir.
 
-3. Ative o ambiente virtual:
-   - No windows:
-   ```bash
-   source venv/bin/activate
-   ```
-   - No macOS ou Linux:
-   ```bash
-   source venv/bin/activate
-   ```
+### Alterar dados do usuário 🔄
 
-4. Instale as dependências:
-    ```bash
-    pip install -r requirements.txt
-    ```
+Esta opção permite alterar o nome e o e-mail de um usuário existente. Será solicitado que você insira o CPF do usuário cujos dados deseja alterar.
 
-5. Execute o programa:
-    ```bash
-    python main.py
-    ```
-   
-### Como Usar o Programa
+## Validações 🛡️
 
-Ao executar o programa, você terá um menu com as opções:
+O sistema realiza validações nos dados inseridos pelo usuário:
 
-- **Cadastrar usuário**
-- **Listar usuários**
-- **Excluir usuário**
-- **Sair**
+- **Nome**: Deve conter apenas letras e espaços. Caso contrário, será exibida uma mensagem de erro e será solicitado que você insira o nome novamente.
+- **CPF**: Deve conter 11 dígitos e passar pela validação de CPF. Caso contrário, será exibida uma mensagem de erro e será solicitado que você insira o CPF novamente.
+- **E-mail**: Deve ser um e-mail válido. Caso contrário, será exibida uma mensagem de erro e será solicitado que você insira o e-mail novamente.
 
-Siga as instruções na tela para realizar as operações desejadas.
+## Banco de Dados 🗃️
 
-### Contribuições
+O sistema utiliza SQLite como banco de dados. O SQLAlchemy é usado para criar, consultar, atualizar e excluir registros no banco de dados. O banco de dados é criado automaticamente ao iniciar o sistema.
 
-Contribuições são bem-vindas! Se você deseja melhorar ou adicionar recursos ao programa, sinta-se à vontade para fazer um fork do repositório, implementar suas alterações e enviar um pull request.
+## Contribuições 💡
 
-### Licença
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-Este programa é distribuído sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
+## Licença 📄
 
-**Nota:** Este é um exemplo de README.md para fins ilustrativos. Certifique-se de personalizar este arquivo de acordo com as necessidades do seu projeto.
+Este projeto está licenciado sob a licença MIT.
+
+## Contato 📧
+
+Se você tiver alguma dúvida ou sugestão, não hesite em me contatar!
+
+Espero que você goste deste projeto! 😊
