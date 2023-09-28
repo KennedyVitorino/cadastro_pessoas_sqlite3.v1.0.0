@@ -122,4 +122,4 @@ def recuperar_usuario(session):
         print(f'CPF: {usuario.cpf}', end=', ')
         print(f'E-mail: {usuario.email}')
     else:
-        print(f'Usupario com CPF {cpf} não encontrado.')
+        print(f'Usurário com CPF {cpf} não encontrado.')

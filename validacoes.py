@@ -1,7 +1,6 @@
 import re
 
 
-
 def validar_nome(nome):
     if re.match('^[A-Za-zÀ-ÿ ]*$', nome):
         palavras = nome.split()
